@@ -19,6 +19,15 @@
 
 # npm install swagger-autogen
 
+## Log Loki 
+# npm install winston winston-loki
+
+## Build Docker
+# docker build -t my-image:latest .
+
+## Run Docker 
+# docker run -p 3500:3000 my-image
+
 
 
 ## สร้างไฟล์ index.js 

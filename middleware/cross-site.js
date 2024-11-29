@@ -1,11 +1,6 @@
 // กำหนด whitelist ของเว็บไซต์ที่อนุญาต
 const whitelist = [
-    'https://appsonofodin.vercel.app'
-    ,'https://apisonofodin.vercel.app'
-    ,'https://my-apptestpol.vercel.app'
-    ,'https://apisonofodin.vercel.app/swagger'
-    ,'https://hugin-raven.vercel.app'
-    ,'https://apisonofodin.vercel.app'];
+    'https://'];
   const corsOptions = {
     origin: function (origin, callback) {
       if (whitelist.indexOf(origin) !== -1) {

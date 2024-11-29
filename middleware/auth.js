@@ -3,7 +3,6 @@ const router = express.Router();
 const jwt = require('jsonwebtoken');
 const SECRET_KEY = process.env.SECRET_KEY;
 
-
 const authenticateToken = (req, res, next) => {
 
   const authHeader = req.headers['authorization'];
@@ -18,15 +17,12 @@ const authenticateToken = (req, res, next) => {
   });
 };
 
-
-
 router.post('/method1', async (req, res) => {
   const { name } = req.body;
 
   res.status(200).json({ body: req.body, msg: 'method1' });
 
 });
-
 
 router.post('/gettoken', (req, res) => {
   const { username, password } = req.body;
